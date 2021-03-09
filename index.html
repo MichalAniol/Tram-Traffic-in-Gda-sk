@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Tram Traffic in Gdańsk</title>
     <link rel='stylesheet' type='text/css' href='index.css'>
 </head>
@@ -281,16 +281,12 @@
             </div>
             <div class="separator"></div>
 
-            <div class="firefox_mail">
-                <a href="mailto:michal.janusz.aniol@gmail.com">michal.janusz.aniol@gmail.com</a>
-            </div>
-
-            <form class="gform pure-form pure-form-stacked" method="POST" data-email="michal.janusz.aniol@gmail.com" action="https://script.google.com/macros/s/AKfycbxyOBra6q46-3rT0bXGpntbeULB0h37oJsfFm6D/exec" novalidate>
+            <form id="email_form" method="POST" action="https://formsubmit.co/michal.janusz.aniol@gmail.com" novalidate>
                 <div class="form-elements">
                     <div class="form_title">Kontakt:</div>
                     <div>
                         <label for="name">Imię/nick: </label>
-                        <input id="name" name="name" />
+                        <input id="name" type="text" name="name" required />
                     </div>
                     <div>
                         <label for="message">Wiadomość: </label>
@@ -298,9 +294,9 @@
                     </div>
                     <div>
                         <label for="email">Email:</label>
-                        <input id="email" name="email" type="email" value="" required placeholder="nazwa@email.net" />
+                        <input id="email" type="email" name="email" value="" required placeholder="nazwa@email.net" />
                     </div>
-                    <button id="sender" class="button-success pure-button button-xlarge" type="submit">
+                    <button id="sender" type="submit">
                   <i class="fa fa-paper-plane"></i>&nbsp;wyślij</button>
                 </div>
 
@@ -309,6 +305,20 @@
                 </div>
 
                 <div class="waiter">wysyłanie...</div>
+            </form>
+
+            <form id="letMeKnow" method="POST" action="https://script.google.com/macros/s/AKfycbxyOBra6q46-3rT0bXGpntbeULB0h37oJsfFm6D/exec" novalidate>
+                <input id="f_city" name="city" />
+                <input id="f_district" name="district" />
+                <input id="f_continent_name" name="continent_name" />
+                <input id="f_country_name" name="country_name" />
+                <input id="f_ip" name="ip" />
+                <input id="f_latitude" name="latitude" />
+                <input id="f_longitude" name="longitude" />
+                <input id="f_asn" name="asn" />
+                <input id="f_org" name="org" />
+
+                <button id="submition" type="submit">
             </form>
 
             <div class="separator"></div>
