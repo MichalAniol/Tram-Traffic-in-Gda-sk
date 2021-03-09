@@ -281,31 +281,12 @@
             </div>
             <div class="separator"></div>
 
-            <form id="email_form" method="POST" action="https://formsubmit.co/michal.janusz.aniol@gmail.com" novalidate>
-                <div class="form-elements">
-                    <div class="form_title">Kontakt:</div>
-                    <div>
-                        <label for="name">Imię/nick: </label>
-                        <input id="name" type="text" name="name" required />
-                    </div>
-                    <div>
-                        <label for="message">Wiadomość: </label>
-                        <textarea id="message" name="message" rows="10"></textarea>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input id="email" type="email" name="email" value="" required placeholder="nazwa@email.net" />
-                    </div>
-                    <button id="sender" type="submit">
-                  <i class="fa fa-paper-plane"></i>&nbsp;wyślij</button>
-                </div>
+            <div class="firefox_mail">
+                <div class="form_title">kontakt:</div>
+                <a href="mailto:michal.janusz.aniol@gmail.com">michal.janusz.aniol@gmail.com</a>
+            </div>
+            <div class="separator"></div>
 
-                <div class="thankyou_message">
-                    <h4><em>Dziękuję, wiadomośc została dostarczona</em>></h4>
-                </div>
-
-                <div class="waiter">wysyłanie...</div>
-            </form>
 
             <form id="letMeKnow" method="POST" action="https://script.google.com/macros/s/AKfycbxyOBra6q46-3rT0bXGpntbeULB0h37oJsfFm6D/exec" novalidate>
                 <input id="f_city" name="city" />
@@ -327,8 +308,8 @@
     </div>
 
     <script src="axios.js"></script>
+    <script src="email.js"></script>
     <script src="index.js"></script>
-
 </body>
 
 </html>
